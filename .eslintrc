@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "extends": "@react-native-community",
+  "plugins": ["@typescript-eslint", "import", "prettier"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "external",
+          "internal",
+          "index",
+          "sibling",
+          "parent",
+          "builtin",
+          "object",
+          "type"
+        ]
+      }
+    ]
+  },
+  "globals": {
+    "React": true,
+    "google": true,
+    "mount": true,
+    "mountWithRouter": true,
+    "shallow": true,
+    "shallowWithRouter": true,
+    "context": true,
+    "expect": true,
+    "jsdom": true,
+    "JSX": true
+  },
+  "ignorePatterns": ["/vendor/*"]
+}
